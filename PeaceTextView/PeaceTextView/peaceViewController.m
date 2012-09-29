@@ -21,7 +21,7 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
-    self.textView.placeholder = @"Please enter your name ";
+    self.textView.placeholder = @"Please input some text... ";
 }
 
 - (void)didReceiveMemoryWarning

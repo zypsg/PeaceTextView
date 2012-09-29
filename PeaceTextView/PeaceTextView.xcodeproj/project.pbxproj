@@ -93,10 +93,9 @@
 				B08DB5431616D1AF00D9BA06 /* peaceViewController.h */,
 				B08DB5441616D1AF00D9BA06 /* peaceViewController.m */,
 				B08DB5461616D1AF00D9BA06 /* peaceViewController.xib */,
-				B08DB5321616D1AF00D9BA06 /* Supporting Files */,
 				B08DB54E1616D25C00D9BA06 /* PeaceTextView.h */,
 				B08DB54F1616D25C00D9BA06 /* PeaceTextView.m */,
-				B08DB5911616F15800D9BA06 /* Introducation */,
+				B08DB5321616D1AF00D9BA06 /* Supporting Files */,
 			);
 			path = PeaceTextView;
 			sourceTree = "<group>";
@@ -104,6 +103,7 @@
 		B08DB5321616D1AF00D9BA06 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				B08DB5911616F15800D9BA06 /* Introducation */,
 				B08DB5331616D1AF00D9BA06 /* PeaceTextView-Info.plist */,
 				B08DB5341616D1AF00D9BA06 /* InfoPlist.strings */,
 				B08DB5371616D1AF00D9BA06 /* main.m */,
