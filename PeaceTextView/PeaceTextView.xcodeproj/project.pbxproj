@@ -1,0 +1,308 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B08DB52C1616D1AF00D9BA06 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B08DB52B1616D1AF00D9BA06 /* UIKit.framework */; };
+		B08DB52E1616D1AF00D9BA06 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B08DB52D1616D1AF00D9BA06 /* Foundation.framework */; };
+		B08DB5301616D1AF00D9BA06 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B08DB52F1616D1AF00D9BA06 /* CoreGraphics.framework */; };
+		B08DB5361616D1AF00D9BA06 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B08DB5341616D1AF00D9BA06 /* InfoPlist.strings */; };
+		B08DB5381616D1AF00D9BA06 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B08DB5371616D1AF00D9BA06 /* main.m */; };
+		B08DB53C1616D1AF00D9BA06 /* peaceAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B08DB53B1616D1AF00D9BA06 /* peaceAppDelegate.m */; };
+		B08DB53E1616D1AF00D9BA06 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = B08DB53D1616D1AF00D9BA06 /* Default.png */; };
+		B08DB5401616D1AF00D9BA06 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B08DB53F1616D1AF00D9BA06 /* Default@2x.png */; };
+		B08DB5421616D1AF00D9BA06 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B08DB5411616D1AF00D9BA06 /* Default-568h@2x.png */; };
+		B08DB5451616D1AF00D9BA06 /* peaceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B08DB5441616D1AF00D9BA06 /* peaceViewController.m */; };
+		B08DB5481616D1AF00D9BA06 /* peaceViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B08DB5461616D1AF00D9BA06 /* peaceViewController.xib */; };
+		B08DB5501616D25C00D9BA06 /* PeaceTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = B08DB54F1616D25C00D9BA06 /* PeaceTextView.m */; };
+		B08DB5921616F15800D9BA06 /* Introducation in Resources */ = {isa = PBXBuildFile; fileRef = B08DB5911616F15800D9BA06 /* Introducation */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B08DB5271616D1AF00D9BA06 /* PeaceTextView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PeaceTextView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B08DB52B1616D1AF00D9BA06 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		B08DB52D1616D1AF00D9BA06 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B08DB52F1616D1AF00D9BA06 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		B08DB5331616D1AF00D9BA06 /* PeaceTextView-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PeaceTextView-Info.plist"; sourceTree = "<group>"; };
+		B08DB5351616D1AF00D9BA06 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B08DB5371616D1AF00D9BA06 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B08DB5391616D1AF00D9BA06 /* PeaceTextView-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PeaceTextView-Prefix.pch"; sourceTree = "<group>"; };
+		B08DB53A1616D1AF00D9BA06 /* peaceAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = peaceAppDelegate.h; sourceTree = "<group>"; };
+		B08DB53B1616D1AF00D9BA06 /* peaceAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = peaceAppDelegate.m; sourceTree = "<group>"; };
+		B08DB53D1616D1AF00D9BA06 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		B08DB53F1616D1AF00D9BA06 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		B08DB5411616D1AF00D9BA06 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		B08DB5431616D1AF00D9BA06 /* peaceViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = peaceViewController.h; sourceTree = "<group>"; };
+		B08DB5441616D1AF00D9BA06 /* peaceViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = peaceViewController.m; sourceTree = "<group>"; };
+		B08DB5471616D1AF00D9BA06 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/peaceViewController.xib; sourceTree = "<group>"; };
+		B08DB54E1616D25C00D9BA06 /* PeaceTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PeaceTextView.h; sourceTree = "<group>"; };
+		B08DB54F1616D25C00D9BA06 /* PeaceTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PeaceTextView.m; sourceTree = "<group>"; };
+		B08DB5911616F15800D9BA06 /* Introducation */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Introducation; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B08DB5241616D1AF00D9BA06 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B08DB52C1616D1AF00D9BA06 /* UIKit.framework in Frameworks */,
+				B08DB52E1616D1AF00D9BA06 /* Foundation.framework in Frameworks */,
+				B08DB5301616D1AF00D9BA06 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B08DB51C1616D1AF00D9BA06 = {
+			isa = PBXGroup;
+			children = (
+				B08DB5311616D1AF00D9BA06 /* PeaceTextView */,
+				B08DB52A1616D1AF00D9BA06 /* Frameworks */,
+				B08DB5281616D1AF00D9BA06 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B08DB5281616D1AF00D9BA06 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B08DB5271616D1AF00D9BA06 /* PeaceTextView.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B08DB52A1616D1AF00D9BA06 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B08DB52B1616D1AF00D9BA06 /* UIKit.framework */,
+				B08DB52D1616D1AF00D9BA06 /* Foundation.framework */,
+				B08DB52F1616D1AF00D9BA06 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B08DB5311616D1AF00D9BA06 /* PeaceTextView */ = {
+			isa = PBXGroup;
+			children = (
+				B08DB53A1616D1AF00D9BA06 /* peaceAppDelegate.h */,
+				B08DB53B1616D1AF00D9BA06 /* peaceAppDelegate.m */,
+				B08DB5431616D1AF00D9BA06 /* peaceViewController.h */,
+				B08DB5441616D1AF00D9BA06 /* peaceViewController.m */,
+				B08DB5461616D1AF00D9BA06 /* peaceViewController.xib */,
+				B08DB5321616D1AF00D9BA06 /* Supporting Files */,
+				B08DB54E1616D25C00D9BA06 /* PeaceTextView.h */,
+				B08DB54F1616D25C00D9BA06 /* PeaceTextView.m */,
+				B08DB5911616F15800D9BA06 /* Introducation */,
+			);
+			path = PeaceTextView;
+			sourceTree = "<group>";
+		};
+		B08DB5321616D1AF00D9BA06 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B08DB5331616D1AF00D9BA06 /* PeaceTextView-Info.plist */,
+				B08DB5341616D1AF00D9BA06 /* InfoPlist.strings */,
+				B08DB5371616D1AF00D9BA06 /* main.m */,
+				B08DB5391616D1AF00D9BA06 /* PeaceTextView-Prefix.pch */,
+				B08DB53D1616D1AF00D9BA06 /* Default.png */,
+				B08DB53F1616D1AF00D9BA06 /* Default@2x.png */,
+				B08DB5411616D1AF00D9BA06 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B08DB5261616D1AF00D9BA06 /* PeaceTextView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B08DB54B1616D1AF00D9BA06 /* Build configuration list for PBXNativeTarget "PeaceTextView" */;
+			buildPhases = (
+				B08DB5231616D1AF00D9BA06 /* Sources */,
+				B08DB5241616D1AF00D9BA06 /* Frameworks */,
+				B08DB5251616D1AF00D9BA06 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PeaceTextView;
+			productName = PeaceTextView;
+			productReference = B08DB5271616D1AF00D9BA06 /* PeaceTextView.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B08DB51E1616D1AF00D9BA06 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = peace;
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = zhaoyp;
+			};
+			buildConfigurationList = B08DB5211616D1AF00D9BA06 /* Build configuration list for PBXProject "PeaceTextView" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = B08DB51C1616D1AF00D9BA06;
+			productRefGroup = B08DB5281616D1AF00D9BA06 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B08DB5261616D1AF00D9BA06 /* PeaceTextView */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B08DB5251616D1AF00D9BA06 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B08DB5361616D1AF00D9BA06 /* InfoPlist.strings in Resources */,
+				B08DB53E1616D1AF00D9BA06 /* Default.png in Resources */,
+				B08DB5401616D1AF00D9BA06 /* Default@2x.png in Resources */,
+				B08DB5421616D1AF00D9BA06 /* Default-568h@2x.png in Resources */,
+				B08DB5481616D1AF00D9BA06 /* peaceViewController.xib in Resources */,
+				B08DB5921616F15800D9BA06 /* Introducation in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B08DB5231616D1AF00D9BA06 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B08DB5381616D1AF00D9BA06 /* main.m in Sources */,
+				B08DB53C1616D1AF00D9BA06 /* peaceAppDelegate.m in Sources */,
+				B08DB5451616D1AF00D9BA06 /* peaceViewController.m in Sources */,
+				B08DB5501616D25C00D9BA06 /* PeaceTextView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B08DB5341616D1AF00D9BA06 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B08DB5351616D1AF00D9BA06 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		B08DB5461616D1AF00D9BA06 /* peaceViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B08DB5471616D1AF00D9BA06 /* en */,
+			);
+			name = peaceViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B08DB5491616D1AF00D9BA06 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B08DB54A1616D1AF00D9BA06 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B08DB54C1616D1AF00D9BA06 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PeaceTextView/PeaceTextView-Prefix.pch";
+				INFOPLIST_FILE = "PeaceTextView/PeaceTextView-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		B08DB54D1616D1AF00D9BA06 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PeaceTextView/PeaceTextView-Prefix.pch";
+				INFOPLIST_FILE = "PeaceTextView/PeaceTextView-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B08DB5211616D1AF00D9BA06 /* Build configuration list for PBXProject "PeaceTextView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B08DB5491616D1AF00D9BA06 /* Debug */,
+				B08DB54A1616D1AF00D9BA06 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B08DB54B1616D1AF00D9BA06 /* Build configuration list for PBXNativeTarget "PeaceTextView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B08DB54C1616D1AF00D9BA06 /* Debug */,
+				B08DB54D1616D1AF00D9BA06 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B08DB51E1616D1AF00D9BA06 /* Project object */;
+}
