@@ -20,37 +20,28 @@
 @synthesize placeholder;
 @synthesize placeholderColor;
 @synthesize placeholderFont;
+@synthesize peaceDelegate;
+@synthesize maxCharNum;
 
 - (id)initWithFrame:(CGRect)frame
 {
     self = [super initWithFrame:frame];
     if (self) {
         // Initialization code
+        self.delegate = self;
  
     }
     return self;
 }
 
-
-
-
-- (void) observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context
+- (void)awakeFromNib
 {
-    if(![self hasText]) {
- 
-        [UIView animateWithDuration:0.15 animations:^{
-            placeholderLabel.alpha = 1.0;
-        }];
-    } else if ([[self subviews] containsObject:placeholderLabel]) {
-        
-        [UIView animateWithDuration:0.15 animations:^{
-            placeholderLabel.alpha = 0.0;
-        } completion:^(BOOL finished) {
-            
-        }];
-    }
+    self.delegate = self;
 }
 
+
+
+ 
 - (void) setPlaceholder:(NSString *)placeholderNew
 {
  
@@ -96,15 +87,6 @@
         [placeholderLabel setTextColor:[UIColor lightGrayColor]];
         placeholderLabel.adjustsFontSizeToFitWidth = YES;
         [self addSubview:placeholderLabel];
-        [self addObserver:self forKeyPath:@"text" options:NSKeyValueObservingOptionNew context:NULL];
-        
-        [[NSNotificationCenter defaultCenter] addObserver:self
-                                                 selector:@selector(textViewDidChange) name:UITextViewTextDidChangeNotification
-                                                   object:self];
-        
-        [[NSNotificationCenter defaultCenter] addObserver:self
-                                                 selector:@selector(textViewDidEndEditing) name:UITextViewTextDidEndEditingNotification
-                                                   object:self];
     }
 }
 
@@ -125,10 +107,68 @@
     [placeholderLabel release];
     [super dealloc];
 }
-
+ 
 #pragma mark-
-#pragma mark---handle notification ---
-- (void) textViewDidChange
+#pragma mark ---UITextViewDelegate Methods ---
+- (BOOL)textViewShouldBeginEditing:(UITextView *)textView
+{
+    BOOL ret = YES;
+    if([peaceDelegate respondsToSelector:@selector(textViewShouldBeginEditing:)])
+    {
+        ret = [peaceDelegate textViewShouldBeginEditing:self];
+    }
+    return ret;
+}
+- (BOOL)textViewShouldEndEditing:(UITextView *)textView
+{
+    BOOL ret = YES;
+    if([peaceDelegate respondsToSelector:@selector(textViewShouldEndEditing:)])
+    {
+        ret = [peaceDelegate textViewShouldEndEditing:self];
+    }
+    return ret;
+}
+
+- (void)textViewDidBeginEditing:(UITextView *)textView
+{
+    if([peaceDelegate respondsToSelector:@selector(textViewDidBeginEditing:)])
+    {
+        [peaceDelegate textViewDidBeginEditing:self];
+    }
+}
+- (void)textViewDidEndEditing:(UITextView *)textView
+{
+    if (![self hasText]) {
+        [UIView animateWithDuration:0.15 animations:^{
+            placeholderLabel.alpha = 1.0;
+        }];
+    }
+    
+    if([peaceDelegate respondsToSelector:@selector(textViewDidEndEditing:)])
+    {
+        [peaceDelegate textViewDidEndEditing:self];
+    }
+}
+
+/*
+ range.length 代表删除的字符个数，text代表即将输入的字符，
+ */
+- (BOOL)textView:(UITextView *)textView shouldChangeTextInRange:(NSRange)range replacementText:(NSString *)text
+{
+    BOOL ret = YES;
+    if(maxCharNum>0)
+    {
+        NSString* orginalText = textView.text;
+        int length = [orginalText length]-range.length+[text length];
+        if(length<=maxCharNum)
+        {
+            return YES;
+        }
+        return NO;
+    }
+    return ret;
+}
+- (void)textViewDidChange:(UITextView *)textView
 {
     if(![self hasText]) {
         [UIView animateWithDuration:0.15 animations:^{
@@ -136,17 +176,20 @@
         }];
     } else  {
         placeholderLabel.alpha = 0.0;
- 
+        
+    }
+    
+    if([peaceDelegate respondsToSelector:@selector(textViewDidChange:)])
+    {
+        [peaceDelegate textViewDidChange:self];
     }
 }
 
-- (void)textViewDidEndEditing
+- (void)textViewDidChangeSelection:(UITextView *)textView
 {
-    if (![self hasText]) {
-        [UIView animateWithDuration:0.15 animations:^{
-            placeholderLabel.alpha = 1.0;
-        }];
+    if([peaceDelegate respondsToSelector:@selector(textViewDidChangeSelection:)])
+    {
+        [peaceDelegate textViewDidChangeSelection:self];
     }
 }
-
 @end
